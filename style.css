@@ -8,8 +8,8 @@ body {
 .screen {
   margin: 0;
   display: flex;
-  /*justify-content: center;
-        align-items: center;*/
+  justify-content: center;
+  align-items: center;
   align-content: flex-start;
   height: 350px;
   flex-wrap: wrap;
@@ -42,6 +42,7 @@ button:hover {
 }
 
 .control {
+  /* width: 70%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
