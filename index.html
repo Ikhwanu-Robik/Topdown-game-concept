@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legend of Zelda: Minish Cap</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = function () {var context = new AudioContext();}
+  </script>
+</head>
+
+<body>
+  <audio id="ost" style="display: none;" autoplay loop>
+    <source src="audio/hyrule-field.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="screen">
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <!--layer-->
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <!--layer-->
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <!--layer-->
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <!--layer-->
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <!--layer-->
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <!--layer-->
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+    <div class="water"></div>
+  </div>
+  <div id="player" style="top: 152px; left: 152px"></div>
+  <div class="control">
+    <button class="top" onmouseover="upTime = setInterval(up, 13); startAnimU()" onmouseout="clearInterval(upTime); stopAnimU()">
+      ↑
+    </button>
+    <button class="left" onmouseover="leftTime = setInterval(left, 13); startAnimL()" onmouseout="clearInterval(leftTime); stopAnimL()">
+      ←
+    </button>
+    <button class="mid" onclick="">•</button>
+    <button class="right" onmouseover="rightTime = setInterval(right, 13); startAnimR()" onmouseout="clearInterval(rightTime); stopAnimR()">
+      →
+    </button>
+    <button class="b">B</button>
+    <button class="down" onmouseover="downTime = setInterval(down, 13); startAnimD()" onmouseout="clearInterval(downTime); stopAnimD()">
+      ↓
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: black;
+  width: 360px;
+  height: 900px;
+}
+
+.screen {
+  margin: 0;
+  display: flex;
+  /*justify-content: center;
+        align-items: center;*/
+  align-content: flex-start;
+  height: 350px;
+  flex-wrap: wrap;
+  border: 2px groove rgb(212, 212, 212);
+}
+
+.grass,
+.water {
+  width: 50px;
+  height: 50px;
+  /*background-color: lime;*/
+  background-size: cover;
+}
+
+.grass {
+  background-image: url("assets/grass.jpg");
+}
+
+.water {
+  background-image: url("assets/water.jpg");
+}
+
+button {
+  width: 50px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.top {
+  margin-left: 15%;
+  margin-right: 50%;
+}
+
+.left {
+  margin-left: 7.7%;
+}
+
+.a {
+  margin-left: 15%;
+}
+
+.down {
+  margin-left: 0;
+  margin-right: 35%;
+}
+
+/*background-image: url("assets/animation/image_part_001.png");*/
+
+#player {
+  width: 50px;
+  height: 50px;
+  /*background-color: white;*/
+  background-image: url("assets/front.png");
+  background-size: cover;
+  position: absolute;
+}
